@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title></title>
+      <script>
+           function mouseOver(){
+            document.write("Mouse Over")
+           }    
+    </script>
+  </head>
+   <body>
+      <style>
+          body{
+          background-image:url('h4.jpg');
+          background-size: cover;
+          background-color: cover;
+          color: rgb(199, 255, 192);
+          margin-left: 5px;
+          }
+      </style>
+       <center>
+           <h8>CONTACT US</h8><br>
+                phone number : <input type="text name" name="number"><br>
+                  <script>
+                    function validateemail()
+                    {
+                        var myemail=document.myform.email.value;
+                        var atposition=myemail.indexOf("@");
+                        var dotposition=myemail.lastIndexOf(".");
+                        if(atposition<1 || dotposition<atposition+2 || dotposition+2>=myemail.length){
+                            alert("Please enter a valide e-mail address \n atposition:"+dotposition);
+                            return false;
+                        }
+                    }
+                </script>
+                <form name="myform" method="post"
+                action="loginsuccess.html"
+                onsubmit="return validateemail();">
+                Email:<input type="text" name="email"><br/>
+                <input type="submit" value="register">
+                </form>
+                        <input type="submit"
+       </center>
+    </body>
+</html>
